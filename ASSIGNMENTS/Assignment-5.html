@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question-5</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: antiquewhite;
+    }
+
+    .main{
+      background-color: white;
+      height: 408px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 7px;
+    }
+
+    .login{
+      margin-top: 60px;
+      color: rgb(90, 90, 205);
+      font-weight: bolder;
+      font-size: 39px;
+    }
+
+    .username{
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 6px;
+      margin-right: 213px;
+    }
+
+    .password{
+      font-size: 24px;
+      font-weight: bold;
+      font-size: 22px;
+      margin-top: 13px;
+      margin-bottom: 6px;
+      margin-right: 225px;
+    }
+
+    .input{
+      width: 330px;
+      height: 38px;
+      margin-right: px;
+      border-width: 1.75px;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+
+    .button{
+      margin-top: 33px;
+      height: 46px;
+      width: 310px;
+      border-radius: 6px;
+      font-size: 21px;
+      font-weight: bold;
+      background-color:  rgb(178, 178, 245);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="login">Login</div>
+      
+      <label class="username">Username</label>
+      <input class="input" type="text" placeholder=" Enter your username">
+
+      <label class="password">Password</label>
+      <input class="input" type="password" placeholder=" Enter your password">
+
+      <button class="button">Submit</button>
+    </div>
+    
+  </div>
+</body>
+</html>
