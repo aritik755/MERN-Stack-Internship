@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning</title>
+  <style>
+    .container{
+      height: 500px;
+      background-color: aqua;
+      position: relative;
+      height: 1600px;
+    }
+
+    .box1{
+      position: relative;
+      top: 2px;
+      left: 50px;
+      background-color: blueviolet;
+      height: 200px;
+      width: 200px;
+      margin: 8px;
+    }
+
+    .box2{
+      position: fixed;
+      bottom: 2px;
+      right: 50px;
+      height: 200px;
+      width: 200px;
+      background-color: blueviolet;
+      margin: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+  </div>
+</body>
+</html>
+
+
+<!-- a. Position Relative
+ 1. Elements move relative to itself.
+
+      b. Position Absolute
+ 1. W.R.T its parents who have position relative.
+
+      c. Position Fixed
+ 1. W.R.T to window screen.
+ -->
