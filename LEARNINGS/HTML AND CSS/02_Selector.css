@@ -1,0 +1,33 @@
+.container{
+  background-color: aqua;
+}
+
+#para{
+  font-style: italic;
+  background-color: beige;
+}
+
+div.container,#para{ 
+  font-family: 'Courier New', Courier, monospace;
+  background-color: burlywood;
+}
+
+div p{ /* Work on Parent (Combinator)*/
+  font-size: large;
+  background-color: aqua;
+}
+
+div>p{ /* Work on children (Combinator)*/
+  background-color: blueviolet;
+}
+
+/* Pseudo Class Selector*/
+button:hover{ /* When we keep/hover cursor on the button */
+  background-color: beige;
+  cursor: pointer;
+}
+
+input:focus{
+  font-size: 62px;
+  border: 10px solid goldenrod;
+}
