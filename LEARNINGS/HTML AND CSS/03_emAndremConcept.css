@@ -1,0 +1,37 @@
+*{ /* Resting browser additional margin and padding.*/
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 24px; /* em*/
+}
+
+.top-para{
+  font-size: 28vm; /* 2vm  means 20 percent of width similarly 2vh means 20 percent of height*/
+  font-weight: lighter;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html{
+  font-size: 30px; /* rem*/
+}
+
+.inter-card {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+  background-color: aqua;
+  height: 200px;
+  width: 300px;
+  padding: 4px;
+  border: 5px solid red;
+}
+
+body{
+  background-color: beige
+}
