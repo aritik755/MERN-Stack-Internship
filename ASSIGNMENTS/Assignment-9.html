@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question-9</title>
+  <style>
+    body{
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      background-color: bisque;
+      height: 75px;
+      width: 400px;
+    }
+    .text{
+      animation-name: Text;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: backwards;
+    }
+
+    @keyframes Text {
+      from{
+        margin-left: 80%;
+      }
+      to{
+        margin-left: -80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="text">CSS Learning</p>
+  </div>
+</body>
+</html>
