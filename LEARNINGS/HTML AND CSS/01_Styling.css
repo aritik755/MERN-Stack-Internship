@@ -1,0 +1,10 @@
+.container{
+  background-color: aqua;
+}
+
+p{
+  color: brown;
+}
+
+/* Inline > id > class >tag */
+/* Important Keyword make the priority and bypass the main rule.*/
