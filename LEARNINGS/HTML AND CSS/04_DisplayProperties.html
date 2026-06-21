@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <link rel="stylesheet" href="04_displayProperties.css">
+  <style>
+    *{
+      /* By default every element is in the content-box. */
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    h1{
+      background-color: aqua;
+      width: 500px;
+      height: 200px;
+      padding: 4px; /*Padding Order:- top right bottom left*/
+      border: 5px double blueviolet; /* border-order:- width style color */
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello I am a Header</h1>
+  <!-- Inline Element-->
+   <p>I want to 
+    <span style="font-style: oblique; background-color: rgb(92, 92, 211);
+    width: 60px; height: 20px;"
+    >highlight</span> a text</p>
+    
+    <img src="https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg?w=300" alt="">
+    <img src="https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg?w=300" alt="" style="height: 100px; width: 200px;">
+</body>
+</html>
+
+<!-- Block Elements - h1,div,p
+  They take full width.
+  height and width are applicable
+-->
+
+<!-- Inline Element - span
+  Takes space as much as its content.
+  height and width are not applicable.
+-->
+
+<!-- Inline Block - img
+  Doesnt take the whole width.
+  It allows height and width property on itself.
+-->
+
