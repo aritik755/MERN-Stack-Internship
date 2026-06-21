@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <style>
+    .container{
+      background-color: black;
+      height: 100vh;
+      padding: 16px;
+      display: realtive;
+    }
+
+    .box{
+      height: 150px;
+      width: 150px;
+      background-color: bisque;
+      position: absolute;
+      animation-name: devd;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: backwards;
+      animation-timing-function: ease-in;
+    }
+
+    @keyframes devd {
+      0%{
+        top: 15px;
+        left: 0;
+        background-color: aqua;
+      }
+      25%{
+        top: 15px;
+        left: 800px;
+        background-color: bisque;
+      }
+      50%{
+        top: 600px;
+        left: 800px;
+        background-color: brown;
+      }
+      75%{
+        top: 600px;
+        left: 30px;
+        background-color: red;
+      }
+      100%{
+        top: 15px;
+        left: 30px;
+        background-color: aqua;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+  </div>
+</body>
+</html>
