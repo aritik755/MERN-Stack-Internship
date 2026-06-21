@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    div{
+      height: 400px;
+      width: 600px;
+      background-color: aquamarine;
+      display: flex; /* Elements in same line(row by default).*/
+      gap: 5px; /* Gap between elements*/
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box{
+      height: 50px;
+      width: 50px;
+      background-color: blue;
+      color: bisque;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box1</div>
+    <div class="box">Box2</div>
+    <div class="box">Box3</div>
+  </div>
+</body>
+</html>
+
+<!-- Display - Flex(Parent)
+**Flex- Direction - Row(Default) & Column(Works on main axis)
+
+**Justify Content - 6 values(Works on main axis)(Parent)
+1. Center
+2. flex-end
+3. flex-start
+4. space-around
+5. space-between
+6. space-evenly 
+
+**Align Items(Works on cross axis) - 3 values(Parent)
+1. Center
+
+**Flex Wrap(Parent)
+
+**Align Self(Child)
+
+**Flex Grow(Child)
+
+**Flex Shrink(Child)
+
+**Flex Basis(Child)
+-->

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox 2</title>
+  <style>
+    .container{
+      height: 500px;
+      width: 600px;
+      background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+    }
+
+    .box{
+      height: 100px;
+      width: 100px;
+      background-color: blanchedalmond;
+    }
+
+   .box2{
+    flex-basis: 120;
+   }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+  </div>
+</body>
+</html>
+
+<!--
+1. Flex Grow: 1;(CHILD) -> Take entire available space.
+2. Flex Shrink: 1;(CHILD) -> Used for contraction. -->
