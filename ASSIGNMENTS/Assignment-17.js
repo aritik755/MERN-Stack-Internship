@@ -8,5 +8,5 @@ function sum(...args){
   console.log(`Sum of the given arguments is: ${sum}`);
 }
 
-sum(1, 2, 3); // 6
+sum(1, 2, 3, 4); // 10
 sum(10, 20, 30, 40); // 100
