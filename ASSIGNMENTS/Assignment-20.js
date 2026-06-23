@@ -1,4 +1,4 @@
-const arr = [2, 4, 6, 8, 10];
+const arr = [2, 4, 6, 8, 11];
 
 let i = 0;
 let sum = 0;
