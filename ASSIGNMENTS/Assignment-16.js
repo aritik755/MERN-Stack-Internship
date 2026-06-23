@@ -1,4 +1,4 @@
-const arr = [2, 4, 6, 8, 10];
+const arr = [2, 4, 6, 8, 10, 11];
 
 // firstIndex = 0;
 // lastIndex = arr.length - 1;
