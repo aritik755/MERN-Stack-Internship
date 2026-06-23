@@ -43,5 +43,18 @@ console.log([...fruits]) // Again formation of array.
 console.log([...fruits, ...color]) // Club elements of two arrays in single array. // concatenation
 console.log(fruits.concat(color)) // Club elements of two arrays in single array. // concatenation
 
+// Rest Operator:-
+
+function sum(...args){ // ...args --> "rest parameter/operator" It can take n number of inputs.
+  console.log(args);
+  console.log(args[0]); // First element
+}
+
+sum(1,2,4);
+
+sum(1);
+
+sum(1,2,3,4);
+
 
 
