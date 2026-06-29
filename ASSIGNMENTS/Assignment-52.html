@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-52</title>
+</head>
+<body>
+  <script>
+    let buttonB1 = document.createElement("button");
+    buttonB1.textContent = "1";
+    document.body.appendChild(buttonB1);
+
+    buttonB1.setAttribute("onclick", "increment()")
+    function increment(){
+      buttonB1.textContent = parseInt(buttonB1.textContent) + 1;
+    }
+
+  </script>
+</body>
+</html>
