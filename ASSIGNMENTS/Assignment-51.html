@@ -1,0 +1,25 @@
+<!-- Change Background Color
+Create a button that changes the page background to a random color every time it's clicked.
+Counter -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-51</title>
+</head>
+<body>
+  <button onclick="changeColor()">Change Background Color</button>
+  <script>
+
+    const colors = ["red", "green", "orange", "yellow"];
+    let length = colors.length;
+    function changeColor(){
+      let btnE1 = document.querySelector("button");
+      let index = Math.floor(Math.random()*length);
+      btnE1.style.backgroundColor= colors[index];
+    }
+  </script>
+</body>
+</html>
