@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM (Document Object Model)</title>
+  <style>
+    .link{
+      color: red; 
+    }
+  </style>
+</head>
+<body>
+  <h1 id="heading" class="heading">This is heading</h1>
+  <p class="heading"></p>
+  <a href="#" class="link">Click Here</a>
+  
+  <script>
+    // access:
+    // -> id
+    // -> class
+    // -> tag
+    // const headingE1 = document.getElementById("heading") // Accessing the element(h1).
+    // console.log(headingE1.textContent); // Shows text content only of the element.
+    // headingE1.textContent = "Change Heading"; // Changes the text content.
+
+    // const element = document.getElementsByClassName("heading");
+    // console.log(element[0]);
+    // console.log(element[1]);
+    
+    // const element = document.getElementsByTagName("h1");
+    // console.log(element[0]);
+    // console.log(element[1]);
+
+    // CSS MODIFICATIONS:
+    // const h1 = document.getElementsByTagName("h1");
+    // console.log(h1[0].textContent)
+    // h1[0].style.color = "red";
+
+    // // HTML MODIFICATIION
+    // const paraE1 = document.getElementsByClassName("heading")[1];
+    // paraE1.innerHTML = `This is a para <span style="color: yellow;font-size: 40px;">I have been added inside p element</span>`; // changing the html element.
+
+    // let anchorE1 = document.getElementsByTagName("a")[0];
+    // anchorE1.classList.remove("link");
+
+    // let divE1 = document.createElement("div"); // creating a element using js 
+    // document.body.appendChild(divE1);
+    // let paraE1 = document.createElement("p");
+    // paraE1.textContent = "I am inside div";
+    // paraE1.remove(); // removing an element
+    // divE1.appendChild(paraE1); // adding para in div
+
+    // querySelector is used to get the element using any thing like id tag or class 
+</script>
+</body>
+</html>
