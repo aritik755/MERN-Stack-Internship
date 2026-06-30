@@ -64,6 +64,8 @@ The goal of this repository is to showcase practical development skills, project
 ### Mini Projects
 
 * Landing-Page
+* Basic-Number-Counter
+* To-Do_List
 
 ### Major Projects
 
