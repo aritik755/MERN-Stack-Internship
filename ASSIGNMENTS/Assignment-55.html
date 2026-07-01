@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-55</title>
+</head>
+<body>
+  <script>
+    const divMain = document.createElement('div')
+    document.body.appendChild(divMain);
+    const h1 = document.createElement('h1');
+    h1.textContent = "This is Heading";
+    divMain.appendChild(h1);
+
+    const p = document.createElement('p')
+    p.textContent = "This is para";
+    divMain.appendChild(p);
+
+    const ul = document.createElement('ul');
+    const li1 = document.createElement('li');
+    li1.textContent = "Aisa";
+    const li2 = document.createElement('li');
+    li2.textContent = "Africa";
+    divMain.appendChild(ul);
+    ul.appendChild(li1);
+    ul.appendChild(li2);
+
+    const divE1 = document.createElement('div');
+    divMain.appendChild(divE1);
+    let inputE1 = document.createElement('input');
+    inputE1.type = "text";
+    divE1.appendChild(inputE1);
+    let btnE1 = document.createElement('button');
+    btnE1.textContent = "Click";
+    divE1.appendChild(btnE1);
+
+  </script>
+</body>
+</html>
