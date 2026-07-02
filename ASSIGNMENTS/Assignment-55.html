@@ -18,13 +18,18 @@
     divMain.appendChild(p);
 
     const ul = document.createElement('ul');
-    const li1 = document.createElement('li');
-    li1.textContent = "Aisa";
-    const li2 = document.createElement('li');
-    li2.textContent = "Africa";
     divMain.appendChild(ul);
-    ul.appendChild(li1);
-    ul.appendChild(li2);
+    const arr = ["Asia", "Africa", "Antartica", "Australia"];
+    // for(let items of arr){
+    //   let liE1 = document.createElement('li');
+    //   liE1.textContent = items;
+    //   ul.appendChild(liE1);
+    // }
+    arr.forEach(function(items){
+      let liE1 = document.createElement('li');
+      liE1.textContent = items;
+      ul.appendChild(liE1);
+    });
 
     const divE1 = document.createElement('div');
     divMain.appendChild(divE1);
