@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To-Do List</title>
+</head>
+<body>
+<h1>My To-Do List</h1>
+<input type="text" id="taskInput" placeholder="Enter a task">
+<button id="addBtn">Add Task</button>
+ 
+  <ul id="taskList"></ul>
+ 
+  <script>
+    let inputE1 = document.querySelector('#taskInput');
+    let btnE1 = document.querySelector('#addBtn');
+    let ul = document.querySelector('#taskList');
+
+    btnE1.addEventListener('click' , function(){
+      let inputValue = inputE1.value;
+      let li = document.createElement('li');
+      li.textContent = inputValue;
+      ul.appendChild(li);
+
+      inputE1.value = '';
+    });
+  </script>
+</body>
+</html>
