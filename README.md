@@ -68,6 +68,7 @@ The goal of this repository is to showcase practical development skills, project
 * To-Do_List
 * Password_Checker
 * Accordion
+* Basic_Calculator
 
 ### Major Projects
 
