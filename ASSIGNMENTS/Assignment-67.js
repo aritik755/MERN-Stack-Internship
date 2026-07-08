@@ -44,7 +44,7 @@ console.log("Total chars:", totalChars); // 10
  
 // 4. Async Programming
 
-function fetchGradesCallback(callback) {
+function fetchGradesCallback(callback) { 
 
   setTimeout(() => callback([85, 90, 78]), 2000);
 
@@ -70,10 +70,10 @@ async function fetchGradesAsync() {
  
 // Usage
 
-fetchGradesCallback(grades => console.log("Callback Grades:", grades));
+fetchGradesCallback(grades => console.log("Callback Grades:", grades)); // Callback Grades: [85,98,78]
 
-fetchGradesPromise().then(grades => console.log("Promise Grades:", grades));
+fetchGradesPromise().then(grades => console.log("Promise Grades:", grades)); // Promise Grades: [85,90,78]
 
-fetchGradesAsync();
+fetchGradesAsync(); // Async/Await Grades: [85, 90, 78]
 
  
