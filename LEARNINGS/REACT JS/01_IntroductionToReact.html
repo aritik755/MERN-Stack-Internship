@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script>
+    let divE1 = document.getElementById('root');
+    // let h1E1 = document.createElement('h1');
+    // let h1E2 = document.createElement('h2');
+    
+    // h1E1.textContent = 'React';
+    // h1E1.style.backgroundColor = 'navy';
+    // h1E1.style.fontSize = '30px';
+    // divE1.appendChild(h1E1);
+    
+   
+    // h1E2.textContent = 'JavaSacript';
+    // h1E2.style.backgroundColor = 'bisque';
+    // h1E2.style.fontSize = '30px';
+    // divE1.appendChild(h1E2);
+
+    // const React = {
+    //     createElement: function(tagName, attributes, textContent){
+    //         const element = document.createElement(tagName);
+    //         element.textContent = textContent;
+    //         for(let key in attributes){
+    //             if(key==="style"){
+    //             Object.assign(element[key],attributes[key])
+    //             }
+    //             else{
+    //               element.setAttribute(key, attributes[key])
+    //             }
+    //     }
+    
+    //     return element
+    //     }
+    // }
+    
+    // const ReactDOM = {
+    //   render: (elem,parent)=>{
+    //     parent.appendChild(elem);
+    //   }
+    // }
+ 
+    const root = ReactDOM.createRoot(divE1);
+
+    const h1 = React.createElement("h1", {style:{fontSize: "40px", backgroundColor: "yellow"}}, "I m the top heading")
+    const h2 = React.createElement("h2", {style:{fontSize: "32px", backgroundColor: "green"}}, "I m the second heading");
+    
+    const div = React.createElement(React.Fragment,null,h1,h2)
+
+    root.render(div, root)
+ 
+  </script>
+</body>
+</html>
