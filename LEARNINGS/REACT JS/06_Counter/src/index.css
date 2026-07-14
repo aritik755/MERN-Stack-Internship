@@ -1,0 +1,18 @@
+body{
+  background-color: black;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 22px;
+  font-size: 32px;
+  color: antiquewhite;
+}
+
+.main>div{
+  gap: 8px;
+}
