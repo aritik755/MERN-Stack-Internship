@@ -114,3 +114,21 @@
 
 // OS Module
 
+// import os from "os";
+
+// console.log("Platform:", os.platform());
+// console.log("Architecture:", os.arch());
+// console.log("Cores:", os.cpus().length);
+
+
+// Event Module
+
+import Eventemitter from "events"
+
+const event = new Eventemitter();
+
+event.on("greet", (name) => {
+  console.log(`Good Evening, ${name}`);
+})
+
+event.emit("greet", "Ritik")
